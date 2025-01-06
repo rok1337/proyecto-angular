@@ -1,10 +1,13 @@
 <input (keyup)="changeImage($event)" [value]="imgURL">
 
 <app-post [img]="imgURL" (imgSelected)="logImg($event)">
-    <p>Post 1</p>
+    <p>Some caption</p>
 </app-post>
 
 
-<p>HOLA, yo soy {{ name.toUpperCase() }}</p>
+<p>HOLA, yo soy {{ name | titlecase }}</p>
 <p>HOLA, yo soy {{ getName() }}</p>
 <p>{{ 15 + 13}}</p>
+<p>{{ currentDate | date: 'MMMM d' }}</p>
+<p>{{ cost | currency: 'JPY' }}</p>
+<p> {{ temperature | number: '1.2-5' }}</p>

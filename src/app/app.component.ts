@@ -9,9 +9,13 @@ import { Component } from "@angular/core";
   //styles: ['']
 })
 export class AppComponent {
-  name = 'Luis';
+  name = 'luis ramirez';
   imgURL = 'https://angular.io/assets/images/logos/angular/angular.png';
-  
+  currentDate = new Date();
+  cost = 2000;
+  temperature = 25.3;
+
+
   getName() {
     return this.name;
   }
