@@ -1,0 +1,14 @@
+<div *ngIf="todo" class="todo">
+    <div class="top">
+        <p *ngIf="todo.createdAt">{{todo.createdAt | dateFormat }}</p>
+        <button (click)="(removeTodo())">
+            <img src="/src/assets/Cross_red_circle.svg" alt="cross">
+        </button>
+    </div>
+    <div class="bottom">
+        <span>
+            {{ todo.description }}
+        </span>
+        <!--agregar dropdown-->
+    </div>
+</div>
